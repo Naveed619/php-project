@@ -10,9 +10,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t zuber619
-
-/akshatnewimg6july:v1 .'
+                    sh 'docker build -t zuber619/akshatnewimg6july:v1 .'
                     sh 'docker images'
                 }
             }
